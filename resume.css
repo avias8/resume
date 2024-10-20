@@ -1,18 +1,18 @@
-/* Ensure full-width responsiveness and clean layout */
+/* Ensure the entire page content fills the viewport width */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%; /* Ensure the body fills the page width */
+    margin: 0;
+    padding: 0 5vw; /* Add padding for breathing space based on viewport width */
     box-sizing: border-box;
 }
 
 /* Main header styling */
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     color: #2c3e50;
     border-bottom: 2px solid #3498db;
     padding-bottom: 10px;
@@ -21,15 +21,15 @@ h1 {
 
 /* Subheadings for sections */
 h2 {
-    font-size: 1.8em;
+    font-size: 2.2em;
     margin-top: 30px;
     border-bottom: 1px solid #bdc3c7;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     color: #2c3e50;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-top: 20px;
     color: #2c3e50;
 }
@@ -37,7 +37,7 @@ h3 {
 /* Contact info and links */
 .contact-info {
     margin-bottom: 20px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #333;
 }
 
@@ -87,4 +87,42 @@ li {
 
 .skills-list, .languages-list {
     list-style-type: none;
-   ​⬤
+    padding-left: 0;
+}
+
+.skills-list li, .languages-list li {
+    display: inline-block;
+    margin-right: 15px;
+    color: #333;
+}
+
+/* Ensure the iframe or any other block content fills the width */
+iframe, img, video {
+    width: 100%;
+    max-width: 100%; /* Ensure media elements never overflow */
+    height: auto;
+}
+
+/* Section padding to ensure responsiveness */
+.section {
+    padding: 20px 0;
+}
+
+/* Responsive design to adjust layout based on screen size */
+@media (max-width: 768px) {
+    body {
+        padding: 0 3vw; /* Adjust padding for smaller screens */
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    .contact-info {
+        font-size: 1em;
+    }
+}
