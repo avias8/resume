@@ -1,0 +1,90 @@
+/* Ensure full-width responsiveness and clean layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main header styling */
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Subheadings for sections */
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 5px;
+    color: #2c3e50;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+/* Contact info and links */
+.contact-info {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* General section styling */
+.section {
+    margin-bottom: 30px;
+}
+
+/* List styles for skills and other lists */
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.job-title, .project-title {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.company {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.date {
+    color: #95a5a6;
+    font-size: 0.9em;
+}
+
+.sub-item {
+    margin-left: 20px;
+    list-style-type: circle;
+}
+
+.skills-list, .languages-list {
+    list-style-type: none;
+   ​⬤
