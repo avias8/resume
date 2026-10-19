@@ -1,0 +1,13 @@
+# Keeps the resume inside the ~14 KB a server can send in its first round trip
+# (10 TCP segments), leaving ~1 KB for response headers.
+name: size
+on: [push, pull_request]
+jobs:
+  size:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          gz=$(gzip -9c index.html | wc -c)
+          echo "index.html: $gz B gzipped (budget 13312 B)"
+          test "$gz" -le 13312
